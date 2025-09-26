@@ -17,7 +17,7 @@ const io = ConnectToSocket(server);
 app.set("port", process.env.PORT || 8000);
 
 app.use(cors({
-  origin: "http://lovely-phoenix-b708ba.netlify.app", 
+  origin: "https://lovely-phoenix-b708ba.netlify.app", 
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
