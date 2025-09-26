@@ -7,12 +7,11 @@ let message = {}
 let timeOnline = {}
 export const ConnectToSocket = (server) => {
     const io = new Server(server, {
-        cors: {
-            origin: '*',
-            methods: ['GET', 'POST'],
-            allowedHeaders: ['*'],
-            credentials: 'true'
-        }
+       cors: {
+      origin: "http://lovely-phoenix-b708ba.netlify.app", // ✅ exact frontend domain
+      methods: ["GET", "POST"],
+      credentials: true
+    }
     })
 
     io.on("connection", (socket) => {
